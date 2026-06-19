@@ -74,9 +74,11 @@ export function PricingSection() {
             </ul>
 
             {/* CTA */}
-            <Button size="lg" className="w-full gap-2">
-              Get Instant Access
-              <ArrowRight className="w-4 h-4" />
+            <Button size="lg" className="w-full gap-2" asChild>
+              <a href="https://cosmofeed.com/vp/6a200b7494c7c50013ed8e3a" target="_blank" rel="noopener noreferrer">
+                Get Instant Access
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </Button>
 
             <p className="text-center text-xs text-muted-foreground mt-4">
