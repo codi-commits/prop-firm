@@ -43,7 +43,10 @@ export function ProductWalkthroughSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Video Placeholder */}
-          <motion.div
+          <motion.a
+            href="https://youtu.be/PVGrlccloak?si=8Sec0kMDd2eqoluk"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -64,7 +67,7 @@ export function ProductWalkthroughSection() {
                 <p className="text-xs text-muted-foreground">See how PropFirmPass works</p>
               </div>
             </div>
-          </motion.div>
+          </motion.a>
 
           {/* Feature List */}
           <motion.div
@@ -86,8 +89,10 @@ export function ProductWalkthroughSection() {
               </div>
             ))}
 
-            <Button size="lg" className="w-full sm:w-auto mt-8">
-              Get Started Now
+            <Button size="lg" className="w-full sm:w-auto mt-8" asChild>
+              <a href="https://cosmofeed.com/vp/6a200b7494c7c50013ed8e3a" target="_blank" rel="noopener noreferrer">
+                Get Started Now
+              </a>
             </Button>
           </motion.div>
         </div>

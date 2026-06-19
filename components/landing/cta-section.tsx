@@ -29,9 +29,11 @@ export function CTASection() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="w-full sm:w-auto gap-2">
-                Get Started for ₹999
-                <ArrowRight className="w-4 h-4" />
+              <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
+                <a href="https://cosmofeed.com/vp/6a200b7494c7c50013ed8e3a" target="_blank" rel="noopener noreferrer">
+                  Get Started for ₹999
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </Button>
               <p className="text-sm text-muted-foreground">
                 <span className="line-through">₹14,999</span> - 93% off launch price

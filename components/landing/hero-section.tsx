@@ -117,12 +117,16 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <Button size="lg" className="w-full sm:w-auto gap-2">
-              Get Instant Access
-              <ArrowRight className="w-4 h-4" />
+            <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
+              <a href="https://cosmofeed.com/vp/6a200b7494c7c50013ed8e3a" target="_blank" rel="noopener noreferrer">
+                Get Instant Access
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Watch Demo
+            <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
+              <a href="https://youtu.be/PVGrlccloak?si=8Sec0kMDd2eqoluk" target="_blank" rel="noopener noreferrer">
+                Watch Demo
+              </a>
             </Button>
           </motion.div>
 
