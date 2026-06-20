@@ -31,8 +31,10 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="default" size="sm">
-              Get Started
+            <Button variant="default" size="sm" asChild>
+              <a href="https://cosmofeed.com/vp/6a200b7494c7c50013ed8e3a" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
             </Button>
           </div>
 
@@ -56,8 +58,10 @@ export function Header() {
               <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
                 Pricing
               </a>
-              <Button variant="default" size="sm" className="w-fit">
-                Get Started
+              <Button variant="default" size="sm" className="w-fit" asChild>
+                <a href="https://cosmofeed.com/vp/6a200b7494c7c50013ed8e3a" target="_blank" rel="noopener noreferrer">
+                  Get Started
+                </a>
               </Button>
             </nav>
           </div>
