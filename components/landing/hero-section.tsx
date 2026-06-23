@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button"
 
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
-    hours: 23,
-    minutes: 59,
+    hours: 0,
+    minutes: 10,
     seconds: 59,
   })
 
@@ -22,7 +22,7 @@ function CountdownTimer() {
         } else if (prev.hours > 0) {
           return { hours: prev.hours - 1, minutes: 59, seconds: 59 }
         }
-        return { hours: 23, minutes: 59, seconds: 59 }
+        return { hours: 0, minutes: 10, seconds: 59 }
       })
     }, 1000)
 
