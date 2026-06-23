@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button"
 
 function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
-    hours: 23,
-    minutes: 59,
+    minutes: 10,
     seconds: 59,
   })
 
@@ -18,11 +17,9 @@ function CountdownTimer() {
         if (prev.seconds > 0) {
           return { ...prev, seconds: prev.seconds - 1 }
         } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 }
-        } else if (prev.hours > 0) {
-          return { hours: prev.hours - 1, minutes: 59, seconds: 59 }
+          return { minutes: prev.minutes - 1, seconds: 59 }
         }
-        return { hours: 23, minutes: 59, seconds: 59 }
+        return { minutes: 10, seconds: 59 }
       })
     }, 1000)
 
@@ -33,10 +30,6 @@ function CountdownTimer() {
     <div className="flex items-center gap-2 text-sm">
       <span className="text-muted-foreground">Offer ends in:</span>
       <div className="flex items-center gap-1">
-        <span className="bg-primary/20 text-primary px-2 py-1 rounded font-mono">
-          {String(timeLeft.hours).padStart(2, "0")}
-        </span>
-        <span className="text-muted-foreground">:</span>
         <span className="bg-primary/20 text-primary px-2 py-1 rounded font-mono">
           {String(timeLeft.minutes).padStart(2, "0")}
         </span>

@@ -82,7 +82,7 @@ export function PricingSection() {
             </Button>
 
             <p className="text-center text-xs text-muted-foreground mt-4">
-              Secure payment via Razorpay
+              Secure payment
             </p>
           </div>
         </motion.div>
